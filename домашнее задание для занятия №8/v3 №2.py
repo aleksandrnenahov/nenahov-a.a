@@ -1,15 +1,12 @@
-A = input('Введите вашу строку: ')
+def f(A):
+	n = A.split()
+	stroka = ''
+	for i in n:
+		x = list(i)
+		x.sort()
+		a = ''.join(x)
+		stroka = stroka + ' ' + a
+	return stroka
 
-n = A.split()
-
-stroka = ''
-
-
-for i in n:
-	x = list(i)
-	x.sort()
-	a = ''.join(x)
-	stroka = stroka + ' ' + a
-
-print(stroka[1:])
+print(f(input('Введите вашу строку:')))
 
